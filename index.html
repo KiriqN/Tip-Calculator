@@ -4,22 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
+
   <body>
-    <form>
-      <label for="fname">First name:</label>
-      <input type="text" id="fname" name="fname" />
-      <label for="fname">Last name:</label>
-      <input type="text" id="lname" name="lname" />
-      <label for="fname">Bill amount</label>
-      <input type="number" id="amount" name="amount" />
-      <select name="currency" id="currency">
-        <option value="" selected disabled hidden></option>
-        <option value="ZAR">South African Rand</option>
-        <option value="USD">US Dollar</option>
-        <option value="Pound Sterling">Pound Sterling</option>
-        <option value="Japanese Yen">Japanese Yen</option>
-      </select>
-    </form>
+    <nav class="navbar"><img src="./images/logo.svg" /></nav>
+    <main>
+      <form>
+        <div class="form-group">
+          <label for="fname">First name</label>
+          <input type="text" id="fname" name="fname" />
+        </div>
+
+        <div class="form-group">
+          <label for="lname">Last name</label>
+          <input type="text" id="lname" name="lname" />
+        </div>
+
+        <div class="form-group">
+          <label for="amount">Bill amount</label>
+          <input type="number" id="amount" name="amount" />
+        </div>
+
+        <div class="form-group">
+          <label for="currency">Currency</label>
+          <select name="currency" id="currency">
+            <option value="" selected disabled hidden></option>
+            <option value="ZAR">South African Rand</option>
+            <option value="USD">US Dollar</option>
+            <option value="GBP">Pound Sterling</option>
+            <option value="JPY">Japanese Yen</option>
+          </select>
+        </div>
+      </form>
+    </main>
   </body>
 </html>

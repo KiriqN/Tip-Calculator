@@ -26,3 +26,9 @@ ul,
 ol {
   list-style: none;
 }
+
+.navbar {
+  background-color: #f1f3f4;
+  border-bottom: 4px solid #1b5e20;
+  padding: 10px;
+}
