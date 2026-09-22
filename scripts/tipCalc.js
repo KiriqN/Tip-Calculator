@@ -1,11 +1,30 @@
 "use strict";
 
-function testFunction() {
+document.getElementById("tipCalc").addEventListener("submit", function (e) {
+  const fields = this.querySelectorAll("input, select");
+  let hasEmpty = false;
+
+  fields.forEach((field) => {
+    if (!field.value.trim()) {
+      console.log(field.tagName, field.classList.contains("error"));
+      hasEmpty = true;
+      field.classList.add("error");
+    } else {
+      field.classList.remove("error");
+    }
+  });
+
+  if (hasEmpty) {
+    e.preventDefault();
+  }
+});
+
+function getValues() {
   const tipDetails = [];
 
   const waiterList = document.getElementById("waiterList").value;
   const tableNo = document.getElementById("tableNo").value;
-  const amount = document.getElementById("amount").value;
+  const amount = document.getElementById("amount").valueAsNumber;
   const currency = document.getElementById("currency").value;
 
   tipDetails.push(waiterList, tableNo, amount, currency);

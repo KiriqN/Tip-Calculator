@@ -16,6 +16,7 @@
         <div class="form-group">
           <label for="waiter">Waiter</label>
           <select
+            required
             name="waiterList"
             id="waiterList"
             class="border-2 border-[#1b5e20] outline-none focus:ring-[#1b5e20] rounded-md px-4 py-2"
@@ -31,15 +32,16 @@
         <div class="form-group">
           <label for="tableNo">Table Number</label>
           <select
+            required
             name="tableNo"
             id="tableNo"
             class="border-2 border-[#1b5e20] outline-none focus:ring-[#1b5e20] rounded-md px-4 py-2"
           >
             <option value="" selected disabled hidden></option>
-            <option value="1">Table 1</option>
-            <option value="2">Table 2</option>
-            <option value="3">Table 3</option>
-            <option value="4">Table 4</option>
+            <option value="Table 1">Table 1</option>
+            <option value="Table 2">Table 2</option>
+            <option value="Table 3">Table 3</option>
+            <option value="Table 4">Table 4</option>
           </select>
         </div>
 
@@ -50,12 +52,14 @@
             class="border-2 border-[#1b5e20] focus:border-[#1b5e20] outline-none focus:ring-[#1b5e20] rounded-md px-4 py-2"
             id="amount"
             name="amount"
+            required
           />
         </div>
 
         <div class="form-group">
           <label for="currency">Currency</label>
           <select
+            required
             name="currency"
             id="currency"
             class="border-2 border-[#1b5e20] outline-none focus:ring-[#1b5e20] rounded-md px-4 py-2"
@@ -67,17 +71,18 @@
             <option value="JPY">Japanese Yen</option>
           </select>
         </div>
+        <div class="form-group">
+          <button
+            id="testButton"
+            type="submit"
+            type="button"
+            class="border-2 bg-[#1b5e20] border-[#1b5e20] text-white font-medium focus:border-[#1b5e20] rounded-md px-4 py-2"
+            onclick=""
+          >
+            Submit
+          </button>
+        </div>
       </form>
-      <div class="form-group">
-        <button
-          id="testButton"
-          type="button"
-          class="border-2 bg-[#1b5e20] border-[#1b5e20] text-white font-medium focus:border-[#1b5e20] rounded-md px-4 py-2"
-          onclick="testFunction()"
-        >
-          Submit
-        </button>
-      </div>
     </main>
   </body>
 </html>
