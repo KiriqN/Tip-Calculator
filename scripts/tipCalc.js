@@ -35,10 +35,16 @@ function getValues() {
   const currency = document.getElementById("currency").value;
 
   tipDetails.push(waiterList, tableNo, amount, currency);
-
-  console.log(tipDetails);
+  calcTip(tipDetails);
+  //console.log(tipDetails);
 }
 
 //Calculate tip based on info and value
 
-function calcTip() {}
+function calcTip(tip) {
+  const [waiter, tableNo, billAmount, Currency] = tip;
+  const tipAmount = billAmount * 0.1;
+  const total = tipAmount + billAmount;
+  console.log(tipAmount);
+  console.log(total);
+}
