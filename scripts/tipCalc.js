@@ -1,5 +1,7 @@
 "use strict";
 
+//Check for empty values in the different fields
+
 document.getElementById("tipCalc").addEventListener("submit", function (e) {
   const fields = this.querySelectorAll("input, select");
   let hasEmpty = false;
@@ -16,8 +18,13 @@ document.getElementById("tipCalc").addEventListener("submit", function (e) {
 
   if (hasEmpty) {
     e.preventDefault();
+  } else {
+    e.preventDefault();
+    getValues();
   }
 });
+
+//once values are detected getValues is called to grab values for calculations
 
 function getValues() {
   const tipDetails = [];
@@ -30,16 +37,8 @@ function getValues() {
   tipDetails.push(waiterList, tableNo, amount, currency);
 
   console.log(tipDetails);
-  //splitArray(tipDetails);
 }
 
-/*(function splitArray(details) {
-  tipDetails.forEach((item) => {
-    if (typeof item === "number") {
-      amountDetails.push(item);
-      console.log(amountDetails);
-    }
-  });
+//Calculate tip based on info and value
 
-  return details;
-} */
+function calcTip() {}
