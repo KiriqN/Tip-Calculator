@@ -12,77 +12,84 @@
   <body>
     <nav class="navbar"><img src="./images/logo.svg" /></nav>
     <main>
-      <form id="tipCalc">
-        <div class="form-group">
-          <label for="waiter">Waiter</label>
-          <select
-            required
-            name="waiterList"
-            id="waiterList"
-            class="border-2 border-[#1b5e20] outline-none focus:ring-[#1b5e20] rounded-md px-4 py-2"
-          >
-            <option value="" selected disabled hidden></option>
-            <option value="Jared">Jared</option>
-            <option value="Lawrence">Lawrence</option>
-            <option value="Sarah">Sarah</option>
-            <option value="Jess">Jess</option>
-          </select>
-        </div>
+      <div class="grid grid-cols-2 min-h-screen">
+        <div
+          class="flex justify-center border-r border-dashed border-[#e5e7eb] p-8"
+        >
+          <form id="tipCalc" class="w-[80%]">
+            <div class="form-group">
+              <label for="waiter">Waiter</label>
+              <select
+                required
+                name="waiterList"
+                id="waiterList"
+                class="border-2 border-[#1b5e20] outline-none focus:ring-[#1b5e20] rounded-md px-4 py-2"
+              >
+                <option value="" selected disabled hidden></option>
+                <option value="Jared">Jared</option>
+                <option value="Lawrence">Lawrence</option>
+                <option value="Sarah">Sarah</option>
+                <option value="Jess">Jess</option>
+              </select>
+            </div>
 
-        <div class="form-group">
-          <label for="tableNo">Table Number</label>
-          <select
-            required
-            name="tableNo"
-            id="tableNo"
-            class="border-2 border-[#1b5e20] outline-none focus:ring-[#1b5e20] rounded-md px-4 py-2"
-          >
-            <option value="" selected disabled hidden></option>
-            <option value="Table 1">Table 1</option>
-            <option value="Table 2">Table 2</option>
-            <option value="Table 3">Table 3</option>
-            <option value="Table 4">Table 4</option>
-          </select>
-        </div>
+            <div class="form-group">
+              <label for="tableNo">Table Number</label>
+              <select
+                required
+                name="tableNo"
+                id="tableNo"
+                class="border-2 border-[#1b5e20] outline-none focus:ring-[#1b5e20] rounded-md px-4 py-2"
+              >
+                <option value="" selected disabled hidden></option>
+                <option value="Table 1">Table 1</option>
+                <option value="Table 2">Table 2</option>
+                <option value="Table 3">Table 3</option>
+                <option value="Table 4">Table 4</option>
+              </select>
+            </div>
 
-        <div class="form-group">
-          <label for="amount">Bill amount</label>
-          <input
-            type="number"
-            class="border-2 border-[#1b5e20] focus:border-[#1b5e20] outline-none focus:ring-[#1b5e20] rounded-md px-4 py-2"
-            id="amount"
-            name="amount"
-            required
-          />
-        </div>
+            <div class="form-group">
+              <label for="amount">Bill amount</label>
+              <input
+                type="number"
+                class="border-2 border-[#1b5e20] focus:border-[#1b5e20] outline-none focus:ring-[#1b5e20] rounded-md px-4 py-2"
+                id="amount"
+                name="amount"
+                required
+              />
+            </div>
 
-        <div class="form-group">
-          <label for="currency">Currency</label>
-          <select
-            required
-            name="currency"
-            id="currency"
-            class="border-2 border-[#1b5e20] outline-none focus:ring-[#1b5e20] rounded-md px-4 py-2"
-          >
-            <option value="" selected disabled hidden></option>
-            <option value="ZAR">South African Rand</option>
-            <option value="USD">US Dollar</option>
-            <option value="GBP">Pound Sterling</option>
-            <option value="JPY">Japanese Yen</option>
-          </select>
+            <div class="form-group">
+              <label for="currency">Currency</label>
+              <select
+                required
+                name="currency"
+                id="currency"
+                class="border-2 border-[#1b5e20] outline-none focus:ring-[#1b5e20] rounded-md px-4 py-2"
+              >
+                <option value="" selected disabled hidden></option>
+                <option value="ZAR">South African Rand</option>
+                <option value="USD">US Dollar</option>
+                <option value="GBP">Pound Sterling</option>
+                <option value="JPY">Japanese Yen</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <button
+                id="testButton"
+                type="submit"
+                type="button"
+                class="border-2 bg-[#1b5e20] border-[#1b5e20] text-white font-medium focus:border-[#1b5e20] rounded-md px-4 py-2"
+                onclick=""
+              >
+                Submit
+              </button>
+            </div>
+          </form>
         </div>
-        <div class="form-group">
-          <button
-            id="testButton"
-            type="submit"
-            type="button"
-            class="border-2 bg-[#1b5e20] border-[#1b5e20] text-white font-medium focus:border-[#1b5e20] rounded-md px-4 py-2"
-            onclick=""
-          >
-            Submit
-          </button>
-        </div>
-      </form>
+        <div class="flex justify-center"><p>RECEIPT</p></div>
+      </div>
     </main>
   </body>
 </html>

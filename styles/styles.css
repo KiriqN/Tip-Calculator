@@ -7,7 +7,7 @@
 
 body {
   line-height: 1.5;
-  background-color: #f4f4f4;
+  background-color: #151515;
   color: #333;
 }
 
@@ -28,6 +28,21 @@ ol {
 
 .navbar {
   background-color: #f1f3f4;
-  border-bottom: 4px solid #1b5e20;
+
   padding: 10px;
+}
+
+label {
+  color: #c3c2b7;
+}
+
+p {
+  color: #c3c2b7;
+}
+
+input,
+select {
+  color: white;
+  width: 100%;
+  padding: 8px 20px;
 }
