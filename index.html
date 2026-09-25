@@ -14,9 +14,9 @@
     <main class="flex-1">
       <div class="grid grid-cols-1 md:grid-cols-2 h-full">
         <div
-          class="flex justify-center border-r-2 border-dashed border-[#3f3f46] p-8"
+          class="flex justify-center border-b-2 md:border-r-2 border-dashed border-[#3f3f46] p-8"
         >
-          <form id="tipCalc" class="w-[80%] mt-20">
+          <form id="tipCalc" class="w-full md:w-[90%] mt-5 md:mt-20">
             <div class="form-group m-5">
               <label class="font-bold text-xl" for="waiter">Waiter</label>
               <select
@@ -90,8 +90,8 @@
             </div>
           </form>
         </div>
-        <div class="flex flex-col w-[80%] mx-auto">
-          <div class="p-8 mt-20">
+        <div class="flex flex-col w-full md:w-[90%] mx-auto font-mono">
+          <div class="p-8 mt-5 md:mt-20">
             <p class="m-5 flex font-light justify-center tracking-wide">
               RECEIPT
             </p>
@@ -111,13 +111,13 @@
                 <span class="text-white">""</span>
               </div>
               <div class="flex justify-between text-[16px] mb-2">
-                <span class="text-white">Tip (10%)</span>
-                <span class="text-white">""</span>
+                <span class="text-[#1b5e20]">Tip (10%)</span>
+                <span class="text-[#1b5e20]">""</span>
               </div>
             </div>
             <div class="mb-8">
-              <div class="flex justify-between text-[16px] mb-2">
-                <span class="text-white">Bill</span>
+              <div class="flex justify-between text-[20px] mb-2">
+                <span class="text-white">Total</span>
                 <span class="text-white">""</span>
               </div>
             </div>
