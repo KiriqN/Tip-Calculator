@@ -14,7 +14,7 @@
     <main class="flex-1">
       <div class="grid grid-cols-1 md:grid-cols-2 h-full">
         <div
-          class="flex justify-center border-r border-dashed border-[#e5e7eb] p-8"
+          class="flex justify-center border-r-2 border-dashed border-[#3f3f46] p-8"
         >
           <form id="tipCalc" class="w-[80%] mt-20">
             <div class="form-group m-5">
@@ -90,8 +90,38 @@
             </div>
           </form>
         </div>
-        <div class="flex justify-center p-8 mt-20">
-          <p class="m-5 font-light tracking-wide">RECEIPT</p>
+        <div class="flex flex-col w-[80%] mx-auto">
+          <div class="p-8 mt-20">
+            <p class="m-5 flex font-light justify-center tracking-wide">
+              RECEIPT
+            </p>
+            <div class="border-b-2 border-dashed mb-8 border-[#3f3f46]">
+              <div class="flex justify-between text-[16px] mb-2">
+                <span class="text-white">Waiter</span>
+                <span class="text-white">""</span>
+              </div>
+              <div class="flex justify-between text-[16px] mb-2">
+                <span class="text-white">Table</span>
+                <span class="text-white">""</span>
+              </div>
+            </div>
+            <div class="border-b-2 border-dashed mb-8 border-[#3f3f46]">
+              <div class="flex justify-between text-[16px] mb-2">
+                <span class="text-white">Bill</span>
+                <span class="text-white">""</span>
+              </div>
+              <div class="flex justify-between text-[16px] mb-2">
+                <span class="text-white">Tip (10%)</span>
+                <span class="text-white">""</span>
+              </div>
+            </div>
+            <div class="mb-8">
+              <div class="flex justify-between text-[16px] mb-2">
+                <span class="text-white">Bill</span>
+                <span class="text-white">""</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
