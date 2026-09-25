@@ -35,10 +35,50 @@ p {
   color: #c3c2b7;
 }
 
-input,
+input {
+  color: white;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+input::placeholder {
+  color: #a1a1aa;
+}
+
+select,
+::picker(select) {
+  appearance: base-select;
+}
+
 select {
   color: white;
   width: 100%;
   padding: 10px 20px;
   border-radius: 10px;
+  background-color: #1b1b1b;
+}
+
+select option {
+  padding: 8px 12px;
+}
+
+::picker(select) {
+  border: 2px solid #1b5e20;
+  background-color: #1b1b1b;
+  color: white;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 6px;
+}
+
+select option:hover {
+  background-color: #1b5e20;
+  color: white;
+}
+
+select option::checkmark {
+  display: none;
 }

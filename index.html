@@ -14,7 +14,7 @@
     <main class="flex-1">
       <div class="grid grid-cols-1 md:grid-cols-2 h-full">
         <div
-          class="flex justify-center border-b-2 md:border-r-2 border-dashed border-[#3f3f46] p-8"
+          class="flex justify-center border-b-2 md:border-b-0 md:border-r-2 border-dashed border-[#3f3f46] p-8"
         >
           <form id="tipCalc" class="w-full md:w-[90%] mt-5 md:mt-20">
             <div class="form-group m-5">
@@ -23,7 +23,7 @@
                 required
                 name="waiterList"
                 id="waiterList"
-                class="border-2 text-white font-bold text-xl border-[#1b5e20] outline-none focus:ring-[#1b5e20] rounded-md px-4 py-2"
+                class="dropdown border-2 text-white font-bold text-xl border-[#1b5e20] outline-none focus:ring-[#1b5e20] rounded-md px-4 py-2"
               >
                 <option value="" selected disabled hidden></option>
                 <option value="Jared">Jared</option>
@@ -55,9 +55,10 @@
               <label class="font-bold text-xl" for="amount">Bill amount</label>
               <input
                 type="number"
-                class="border-2 border-[#1b5e20] text-white font-bold text-xl focus:border-[#1b5e20] outline-none focus:ring-[#1b5e20] rounded-md px-4 py-2"
+                class="border-2 border-[#1b5e20] text-white text-xl focus:border-[#1b5e20] outline-none focus:ring-[#1b5e20] rounded-md px-4 py-2"
                 id="amount"
                 name="amount"
+                placeholder="0.00"
                 required
               />
             </div>
