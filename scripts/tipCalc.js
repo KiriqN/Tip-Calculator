@@ -47,9 +47,14 @@ function calcTip(tip) {
   const total = tipAmount + billAmount;
   console.log(tipAmount);
   console.log(total);
-  createInvoice(waiter, tableNo, total, Currency);
+  createInvoice(waiter, tableNo, total, Currency, tipAmount, billAmount);
 }
 
-function createInvoice(waiter, tableNo, total, currency) {
+function createInvoice(waiter, tableNo, total, currency, tip, bill) {
+  document.getElementById("waiterName").innerHTML = `${waiter}`;
+  document.getElementById("tableNumber").innerHTML = `${tableNo}`;
+  document.getElementById("billAmount").innerHTML = `${bill}`;
+  document.getElementById("tipAmount").innerHTML = `${tip}`;
+  document.getElementById("totalAmount").innerHTML = `${total}`;
   console.log(waiter, tableNo, total, currency);
 }
