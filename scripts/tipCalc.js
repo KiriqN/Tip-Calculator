@@ -1,5 +1,13 @@
 "use strict";
 
+// Currewncy Map
+const currencyMap = new Map([
+  ["ZAR", "R"],
+  ["USD", "$"],
+  ["GBP", "£"],
+  ["AUS", "A$"],
+]);
+
 //Check for empty values in the different fields
 
 document.getElementById("tipCalc").addEventListener("submit", function (e) {
@@ -51,10 +59,13 @@ function calcTip(tip) {
 }
 
 function createInvoice(waiter, tableNo, total, currency, tip, bill) {
+  const currencyIcon = currencyMap.get(currency);
+  console.log(currencyIcon);
+
   document.getElementById("waiterName").innerHTML = `${waiter}`;
   document.getElementById("tableNumber").innerHTML = `${tableNo}`;
-  document.getElementById("billAmount").innerHTML = `${bill}`;
-  document.getElementById("tipAmount").innerHTML = `${tip}`;
-  document.getElementById("totalAmount").innerHTML = `${total}`;
+  document.getElementById("billAmount").innerHTML = `${currencyIcon}${bill}`;
+  document.getElementById("tipAmount").innerHTML = `${currencyIcon}${tip}`;
+  document.getElementById("totalAmount").innerHTML = `${currencyIcon}${total}`;
   console.log(waiter, tableNo, total, currency);
 }
