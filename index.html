@@ -12,11 +12,11 @@
   <body class="flex flex-col h-screen">
     <nav class="navbar"><img src="./images/logo.svg" /></nav>
     <main class="flex-1">
-      <div class="grid grid-cols-2 h-full">
+      <div class="grid grid-cols-1 md:grid-cols-2 h-full">
         <div
           class="flex justify-center border-r border-dashed border-[#e5e7eb] p-8"
         >
-          <form id="tipCalc" class="w-[80%]">
+          <form id="tipCalc" class="w-[80%] mt-20">
             <div class="form-group m-5">
               <label class="font-bold text-xl" for="waiter">Waiter</label>
               <select
@@ -90,7 +90,9 @@
             </div>
           </form>
         </div>
-        <div class="flex justify-center"><p>RECEIPT</p></div>
+        <div class="flex justify-center p-8 mt-20">
+          <p class="m-5 font-light tracking-wide">RECEIPT</p>
+        </div>
       </div>
     </main>
   </body>
